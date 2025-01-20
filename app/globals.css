@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased text-foreground-100 bg-background scroll-smooth !important;
+    @apply 2xl:text-[18px] sm:text-[16px] text-[14px];
+    @apply font-sRegular;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .hide-scroll::-webkit-scrollbar {
+    @apply hidden;
+  }
+}
+@layer components {
+}
+
+@layer base {
+  @font-face {
+    font-family: "SpaceGrotesk-Bold";
+    src: url("/fonts/SpaceGrotesk-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "SpaceGrotesk-SemiBold";
+    src: url("/fonts/SpaceGrotesk-SemiBold.ttf");
+  }
+
+  @font-face {
+    font-family: "SpaceGrotesk-Medium";
+    src: url("/fonts/SpaceGrotesk-Medium.ttf");
+  }
+
+  @font-face {
+    font-family: "SpaceGrotesk-Regular";
+    src: url("/fonts/SpaceGrotesk-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "Orbitron-SemiBold";
+    src: url("/fonts/Orbitron-SemiBold.ttf");
+  }
+}
